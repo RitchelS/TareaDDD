@@ -13,6 +13,6 @@ namespace Dominio.Repositorios
         public Task<Persona> BuscarPersonaPorId(int idPersona);
         public Task<IEnumerable<Persona>> ObtenerPersonas();
         public Task<bool> RegistrarPersona(Persona persona);
-        public Task<Persona> EliminarPersona(int idPersona);
+        public Task<bool> EliminarPersona(int idPersona);
     }
 }

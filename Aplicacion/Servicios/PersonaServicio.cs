@@ -28,7 +28,7 @@ namespace Aplicacion.Servicios
             return await this._personaRepositorio.BuscarPersonaPorId(idPersona);
         }
 
-        public async Task<Persona> EliminarPersona(int idPersona)
+        public async Task<bool> EliminarPersona(int idPersona)
         {
             return await this._personaRepositorio.EliminarPersona(idPersona);
         }

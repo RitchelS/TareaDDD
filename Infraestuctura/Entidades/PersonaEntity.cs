@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Infraestuctura.Entidades
 {
-    [Table("persona")]
+    [Table("personas")]
     public class PersonaEntity
     {
         [Key]

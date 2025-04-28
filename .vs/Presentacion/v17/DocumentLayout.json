@@ -1,12 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sojor\\source\\repos\\Presentacion\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Repositorios\\TareaDDD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84D6ABCE-F118-460B-BDBE-6781E15FE48D}|Presentacion.API\\Presentacion.API.csproj|d:\\repositorios\\tareaddd\\presentacion.api\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D6ABCE-F118-460B-BDBE-6781E15FE48D}|Presentacion.API\\Presentacion.API.csproj|solutionrelative:presentacion.api\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "D:\\Repositorios\\TareaDDD\\Presentacion.API\\Controllers\\PersonaController.cs",
+              "RelativeDocumentMoniker": "Presentacion.API\\Controllers\\PersonaController.cs",
+              "ToolTip": "D:\\Repositorios\\TareaDDD\\Presentacion.API\\Controllers\\PersonaController.cs",
+              "RelativeToolTip": "Presentacion.API\\Controllers\\PersonaController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwDgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T23:46:21.009Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

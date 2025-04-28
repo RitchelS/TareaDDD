@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Infraestuctura.Contexto;
+using Infraestuctura.Entidades;
 
 namespace Infraestuctura.Repositorios
 {
@@ -20,29 +21,72 @@ namespace Infraestuctura.Repositorios
             _context = context;
         }
 
-        public Task<bool> ActualizarDatosPersona(int idPersona, string nombre, string apellido1, string apellido2, string correo)
+        public async Task<bool> ActualizarDatosPersona(int idPersona, string nombre, string apellido1, string apellido2, string correo)
         {
-            throw new NotImplementedException();
+            var entity = await _context.Personas.FindAsync(idPersona);
+
+            if (entity == null)
+                return false;
+
+            entity.Nombre = nombre;
+            entity.Apellido1 = apellido1;
+            entity.Apellido2 = apellido2;
+            entity.Correo = correo;
+
+            _context.Personas.Update(entity);
+            var filasAfectadas = await _context.SaveChangesAsync();
+            return filasAfectadas > 0;
         }
 
-        public Task<Persona> BuscarPersonaPorId(int idPersona)
+        public async Task<Persona> BuscarPersonaPorId(int idPersona)
         {
-            throw new NotImplementedException();
+            var entity = await _context.Personas.FindAsync(idPersona);
+
+            if (entity == null)
+                return null;
+
+            return new Persona(entity.Nombre, entity.Apellido1, entity.Apellido2, entity.Correo)
+            {
+                IdPersona = entity.IdPersona
+            };
         }
 
-        public Task<Persona> EliminarPersona(int idPersona)
+        public async  Task<bool> EliminarPersona(int idPersona)
         {
-            throw new NotImplementedException();
+            var entity = await _context.Personas.FindAsync(idPersona);
+
+            if (entity == null)
+                return false;
+
+            _context.Personas.Remove(entity);
+            var filasAfectadas = await _context.SaveChangesAsync();
+            return filasAfectadas > 0;
         }
 
-        public Task<IEnumerable<Persona>> ObtenerPersonas()
+        public async Task<IEnumerable<Persona>> ObtenerPersonas()
         {
-            throw new NotImplementedException();
+           
+            var entidades = await _context.Personas.ToListAsync();
+
+            return entidades.Select(p => new Persona(p.Nombre, p.Apellido1, p.Apellido2, p.Correo)
+            {
+                IdPersona = p.IdPersona
+            });
         }
 
-        public Task<bool> RegistrarPersona(Persona persona)
+        public async Task<bool> RegistrarPersona(Persona persona)
         {
-            throw new NotImplementedException();
+            var entity = new PersonaEntity
+            {
+                Nombre = persona.Nombre,
+                Apellido1 = persona.Apellido1,
+                Apellido2 = persona.Apellido2,
+                Correo = persona.Correo
+            };
+
+            _context.Personas.Add(entity);
+            var filasAfectadas = await _context.SaveChangesAsync();
+            return filasAfectadas > 0;
         }
     }
 }
