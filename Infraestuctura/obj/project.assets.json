@@ -209,16 +209,6 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
-      },
-      "Dominio/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/Dominio.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Dominio.dll": {}
-        }
       }
     }
   },
@@ -584,37 +574,31 @@
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "Dominio/1.0.0": {
-      "type": "project",
-      "path": "../Dominio/Dominio.csproj",
-      "msbuildProject": "../Dominio/Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Dominio >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Diego\\.nuget\\packages\\": {},
+    "C:\\Users\\sojor\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repositorios\\TareaDDD\\Infraestuctura\\Infraestuctura.csproj",
+      "projectUniqueName": "C:\\Users\\sojor\\source\\repos\\Presentacion\\Infraestuctura\\Infraestuctura.csproj",
       "projectName": "Infraestuctura",
-      "projectPath": "D:\\Repositorios\\TareaDDD\\Infraestuctura\\Infraestuctura.csproj",
-      "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-      "outputPath": "D:\\Repositorios\\TareaDDD\\Infraestuctura\\obj\\",
+      "projectPath": "C:\\Users\\sojor\\source\\repos\\Presentacion\\Infraestuctura\\Infraestuctura.csproj",
+      "packagesPath": "C:\\Users\\sojor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sojor\\source\\repos\\Presentacion\\Infraestuctura\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sojor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -628,11 +612,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "D:\\Repositorios\\TareaDDD\\Dominio\\Dominio.csproj": {
-              "projectPath": "D:\\Repositorios\\TareaDDD\\Dominio\\Dominio.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repositorios\\TareaDDD\\Presentacion.API\\Presentacion.API.csproj": {}
+    "C:\\Users\\sojor\\source\\repos\\Presentacion\\Presentacion.API\\Presentacion.API.csproj": {}
   },
   "projects": {
-    "D:\\Repositorios\\TareaDDD\\Presentacion.API\\Presentacion.API.csproj": {
+    "C:\\Users\\sojor\\source\\repos\\Presentacion\\Presentacion.API\\Presentacion.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositorios\\TareaDDD\\Presentacion.API\\Presentacion.API.csproj",
+        "projectUniqueName": "C:\\Users\\sojor\\source\\repos\\Presentacion\\Presentacion.API\\Presentacion.API.csproj",
         "projectName": "Presentacion.API",
-        "projectPath": "D:\\Repositorios\\TareaDDD\\Presentacion.API\\Presentacion.API.csproj",
-        "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositorios\\TareaDDD\\Presentacion.API\\obj\\",
+        "projectPath": "C:\\Users\\sojor\\source\\repos\\Presentacion\\Presentacion.API\\Presentacion.API.csproj",
+        "packagesPath": "C:\\Users\\sojor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sojor\\source\\repos\\Presentacion\\Presentacion.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sojor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
