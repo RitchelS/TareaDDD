@@ -2,6 +2,8 @@
 using Dominio.Entidades;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Presentacion.API.Dtos;
+using Presentacion.Mappers;
 
 namespace Presentacion.API.Controllers
 {
@@ -17,9 +19,9 @@ namespace Presentacion.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> RegistrarPersona(Persona persona)
+        public async Task<IActionResult> RegistrarPersona(PersonaDTO persona)
         {
-            var resultado = await _personaServicio.RegistrarPersona(persona);
+            var resultado = await _personaServicio.RegistrarPersona(PersonaMapper.ConvertirDtoAPersona(persona));
 
             if (resultado)
             {
@@ -31,9 +33,10 @@ namespace Presentacion.API.Controllers
         [HttpGet]
         public async Task<IActionResult> ObtenerPersonas()
         {
-
             var personas = await _personaServicio.ObtenerPersonas();
-            return Ok(personas);
+            var personasDto = personas.Select(p => PersonaMapper.ConvertirPersonaADto(p));
+
+            return Ok(personasDto);
         }
 
         [HttpPut]
@@ -52,7 +55,10 @@ namespace Presentacion.API.Controllers
             var persona = await _personaServicio.BuscarPersonaPorId(idPersona);
 
             if (persona != null)
-                return Ok(persona);
+            {
+                var personaDto = PersonaMapper.ConvertirPersonaADto(persona);
+                return Ok(personaDto);
+            }
 
             return Ok("No se encontró la persona con ese ID");
         }
